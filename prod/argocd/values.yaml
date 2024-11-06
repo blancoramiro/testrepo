@@ -172,6 +172,8 @@ configs:
     # -- Annotations to be added to argocd-cm configmap
     annotations: {}
 
+    kustomize.buildOptions: --enable-helm
+
     # -- The name of tracking label used by Argo CD for resource pruning
     application.instanceLabelKey: argocd.argoproj.io/instance
 
